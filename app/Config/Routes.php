@@ -16,7 +16,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php'))
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('LandingPage');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -30,7 +30,16 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'LandingPage::index');
+
+//Frontend
+$routes->post('categoryfilter/loadProducts', 'ProductByCategory::loadProducts');
+$routes->get('categoryfilter/(:num)', 'ProductByCategory::index/$1');
+$routes->get('product/(:num)', 'DetailProduct::index/$1');
+$routes->get('checkoutinformation/(:num)', 'InformationAfterCheckout::index/$1');
+
+
+//Frontend
 
 /**
  * --------------------------------------------------------------------
