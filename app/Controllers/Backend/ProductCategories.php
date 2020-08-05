@@ -2,7 +2,7 @@
 
 use CodeIgniter\Controller;
 
-Class ProductCategories extends Controller{
+Class Productcategories extends Controller{
     private $product_categories_model;
     protected $request;
 

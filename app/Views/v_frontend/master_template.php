@@ -109,7 +109,7 @@
 
 
 	<!--====== Javascripts & Jquery ======-->
-	<script src="<?= base_url(); ?>/frontend_assetsX/js/jquery-3.3.1.min.js"></script>
+	<script src="<?= base_url(); ?>/frontend_assets/js/jquery-3.2.1.min.js"></script>
 	<script src="<?= base_url(); ?>/frontend_assets/js/bootstrap.min.js"></script>
 	<script src="<?= base_url(); ?>/frontend_assets/js/jquery.slicknav.min.js"></script>
 	<script src="<?= base_url(); ?>/frontend_assets/js/owl.carousel.min.js"></script>

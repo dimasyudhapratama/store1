@@ -2,7 +2,7 @@
 
 use CodeIgniter\Controller;
 
-Class ProofOfPayment extends Controller{
+Class Proofofpayment extends Controller{
     protected $request;
 
     function __construct(){

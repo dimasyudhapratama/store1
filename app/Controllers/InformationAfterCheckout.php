@@ -2,7 +2,7 @@
 
 use CodeIgniter\Controller;
 
-Class InformationAfterCheckout extends Controller{
+Class Informationaftercheckout extends Controller{
     //Index
     public function index($id){
         //Data For Navbar

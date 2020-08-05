@@ -2,7 +2,7 @@
 
 use CodeIgniter\Controller;
 
-Class RajaOngkirGateway extends Controller{
+Class Rajaongkirgateway extends Controller{
 	//Initialization
 	private $province_model;
 	private $city_model;

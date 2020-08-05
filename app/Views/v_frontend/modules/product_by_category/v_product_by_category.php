@@ -51,7 +51,7 @@
 
 	function loadProducts(){
 		$.ajax({
-			url : "<?= base_url().'/ProductByCategory/loadProducts'; ?>",
+			url : "<?= base_url().'/ProductByCategory/loadproducts'; ?>",
 			headers : {'X-Requested-With': 'XMLHttpRequest'},
             method : "POST",
             data : {
@@ -73,7 +73,7 @@
 				var product_data = ""
 
 				for(var index in data){
-					product_image_data = data[index]['images'] ? "<?= base_url().'/../uploaded_images/' ?>"+data[index]['images'] : "<?= base_url().'/../uploaded_images/Default-No-Photo-Available.jpg' ?>";
+					product_image_data = data[index]['images'] ? "<?= base_url().'/uploaded_images/' ?>"+data[index]['images'] : "<?= base_url().'/uploaded_images/Default-No-Photo-Available.jpg' ?>";
 					product_url_data = "<?= base_url().'/product/' ?>"+data[index]['id']
 
 					product_data = "<div class='col-lg-3 col-sm-6'>"+

@@ -2,7 +2,7 @@
 
 use CodeIgniter\Controller;
 
-Class ShoppingCart extends Controller{
+Class Shoppingcart extends Controller{
     //Initialization
     private $product_categories_model;
     private $products_model;

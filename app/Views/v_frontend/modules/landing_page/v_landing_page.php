@@ -13,7 +13,7 @@
 						<div class="pi-pic">
 							<a href="<?= base_url().'/product/'.$record['id'] ?>">
 								<?php
-								$product_image_data = $record['images'] != "" ? base_url().'/../uploaded_images/'.$record['images'] : base_url().'/../uploaded_images/Default-No-Photo-Available.jpg';
+								$product_image_data = $record['images'] != "" ? base_url().'/uploaded_images/'.$record['images'] : base_url().'/uploaded_images/Default-No-Photo-Available.jpg';
 								?>
 								<img src="<?= $product_image_data; ?>" style="width:300px;height:400px;" alt="">
 							</a>
@@ -99,7 +99,7 @@
 
 	function loadProducts(){
 		$.ajax({
-			url : "<?= base_url().'/landingpage/loadProducts/'; ?>"+offset,
+			url : "<?= base_url().'/landingpage/loadproducts/'; ?>"+offset,
 			headers : {'X-Requested-With': 'XMLHttpRequest'},
 			method : "POST",
 			success : function(ajaxData){
@@ -117,7 +117,7 @@
 				var product_data = ""
 
 				for(var index in data){
-					product_image_data = data[index]['images'] ? "<?= base_url().'/../uploaded_images/' ?>"+data[index]['images'] : "<?= base_url().'/../uploaded_images/Default-No-Photo-Available.jpg' ?>";
+					product_image_data = data[index]['images'] ? "<?= base_url().'/uploaded_images/' ?>"+data[index]['images'] : "<?= base_url().'/uploaded_images/Default-No-Photo-Available.jpg' ?>";
 					product_url_data = "<?= base_url().'/product/' ?>"+data[index]['id']
 
 					product_data = "<div class='col-lg-3 col-sm-6'>"+

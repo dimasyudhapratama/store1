@@ -103,7 +103,7 @@
 <?= $this->section('content_js'); ?>
 <script>
     function viewImage(image_url){
-        $("#image_proofofpayment").attr('src','<?= base_url().'/../uploaded_images/bukti_transfer/'; ?>'+image_url)
+        $("#image_proofofpayment").attr('src','<?= base_url().'/uploaded_images/bukti_transfer/'; ?>'+image_url)
         $("#modalShowImage").modal('show');
     }   
 </script>

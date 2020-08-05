@@ -12,7 +12,7 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="product-pic-zoom">
-						<img class="product-big-img" style="width:350px;height:450px;" src="<?= $product['images'] != "" ? base_url().'/../uploaded_images/'.$product['images'] : base_url().'/../uploaded_images/Default-No-Photo-Available.jpg';  ?>" alt="">
+						<img class="product-big-img" style="width:350px;height:450px;" src="<?= $product['images'] != "" ? base_url().'/uploaded_images/'.$product['images'] : base_url().'/uploaded_images/Default-No-Photo-Available.jpg';  ?>" alt="">
 					</div>
 				</div>
 				<div class="col-lg-6 product-details">
@@ -66,7 +66,7 @@
 						<div class="pi-pic">
 							<a href="<?= base_url().'/product/'.$record['id'] ?>">
 								<?php
-								$product_image_data = $record['images'] != "" ? base_url().'/../uploaded_images/'.$record['images'] : base_url().'/../uploaded_images/Default-No-Photo-Available.jpg';
+								$product_image_data = $record['images'] != "" ? base_url().'/uploaded_images/'.$record['images'] : base_url().'/uploaded_images/Default-No-Photo-Available.jpg';
 								?>
 								<img src="<?= $product_image_data; ?>" style="width:300px;height:400px;" alt="">
 							</a>

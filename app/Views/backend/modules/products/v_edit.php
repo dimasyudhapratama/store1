@@ -70,7 +70,7 @@
                     <div class="form-group col-md-12 text-center">
                         <small class="font-weight-bold">Preview Gambar Produk Tersimpan</small>
                         <br>
-                        <img src="<?php echo base_url().'/../uploaded_images/'.$record['images']; ?>" style="width: 240px; height: 455px;" alt="">
+                        <img src="<?php echo base_url().'/uploaded_images/'.$record['images']; ?>" style="width: 240px; height: 455px;" alt="">
                     </div>
                     <?php } ?>
                 </div>

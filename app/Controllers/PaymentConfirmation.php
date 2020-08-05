@@ -2,7 +2,7 @@
 
 use CodeIgniter\Controller;
 
-Class PaymentConfirmation extends Controller{
+Class Paymentconfirmation extends Controller{
     //Index
     public function index(){
         //Data For Navbar
