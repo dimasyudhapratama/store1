@@ -41,9 +41,6 @@ Class Dashboard extends Controller{
 
         //Data Yang Akan Dikirim Ke Front End
         return json_encode($all_data);
-        // echo "<pre>";
-        // print_r(json_encode($all_data));
-        // echo "</pre>";
     }
 
 }

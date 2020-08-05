@@ -51,7 +51,7 @@
 
 	function loadProducts(){
 		$.ajax({
-			url : "<?= base_url().'/ProductByCategory/loadproducts'; ?>",
+			url : "<?= base_url().'/productbycategory/loadproducts'; ?>",
 			headers : {'X-Requested-With': 'XMLHttpRequest'},
             method : "POST",
             data : {

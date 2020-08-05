@@ -100,7 +100,7 @@ Class Sales extends Controller{
             session()->setFlashData('info',$save_error);
         }
 
-        return redirect()->to(base_url('Backend/Sales'));
+        return redirect()->to(base_url('backend/sales'));
     }
 
     public function delete($id = NULL){
@@ -125,7 +125,7 @@ Class Sales extends Controller{
             session()->setFlashData('info',$save_error);
         }
 
-        return redirect()->to(base_url('Backend/Sales'));
+        return redirect()->to(base_url('backend/sales'));
     }
 }
 

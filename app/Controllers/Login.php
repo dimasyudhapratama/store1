@@ -43,7 +43,7 @@ Class Login extends Controller{
                 ];
                 session()->set($data_login);
 
-                return redirect()->to(base_url('Backend/Dashboard'));   
+                return redirect()->to(base_url('backend/dashboard'));   
 
             }else{
                 //if password not match, redirect to Login with flash messages info
@@ -53,7 +53,7 @@ Class Login extends Controller{
                 </div>";
                 session()->setFlashData('info',$info);                
 
-                return redirect()->to(base_url('Login'));   
+                return redirect()->to(base_url('login'));   
             }
 
         }else{
@@ -64,13 +64,13 @@ Class Login extends Controller{
             </div>";
             session()->setFlashData('info',$info);                
             
-            return redirect()->to(base_url('Login'));    
+            return redirect()->to(base_url('login'));    
         }
     }
 
     public function signOut(){
         session()->destroy();
-        return redirect()->to(base_url('Login'));
+        return redirect()->to(base_url('login'));
     }
 
 }

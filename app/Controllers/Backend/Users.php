@@ -57,7 +57,7 @@ Class Users extends Controller{
             session()->setFlashData('info',$save_error);
         }
 
-        return redirect()->to(base_url('Backend/Users'));
+        return redirect()->to(base_url('backend/users'));
     }
 
     //Edit Users
@@ -107,7 +107,7 @@ Class Users extends Controller{
             session()->setFlashData('info',$save_error);
         }
 
-        return redirect()->to(base_url('Backend/Users'));
+        return redirect()->to(base_url('backend/users'));
     }
 
     //Edit User Password
@@ -165,7 +165,7 @@ Class Users extends Controller{
             session()->setFlashData('info',$save_warning);
         }             
 
-        return redirect()->to(base_url('Backend/Users'));
+        return redirect()->to(base_url('backend/users'));
     }
 
     public function delete($id = null){
@@ -186,7 +186,7 @@ Class Users extends Controller{
             session()->setFlashData('info',$save_error);
         }
 
-        return redirect()->to(base_url('Backend/Users'));
+        return redirect()->to(base_url('backend/users'));
     }
 }
 

@@ -54,7 +54,7 @@ Class Productcategories extends Controller{
             session()->setFlashData('info',$save_error);
         }
 
-        return redirect()->to(base_url('Backend/ProductCategories'));
+        return redirect()->to(base_url('backend/productcategories'));
     }
 
     //Edit Products
@@ -100,7 +100,7 @@ Class Productcategories extends Controller{
             session()->setFlashData('info',$save_error);
         }
 
-        return redirect()->to(base_url('Backend/ProductCategories'));
+        return redirect()->to(base_url('backend/productcategories'));
     }
 
     public function delete($id = null){
@@ -121,7 +121,7 @@ Class Productcategories extends Controller{
             session()->setFlashData('info',$save_error);
         }
 
-        return redirect()->to(base_url('Backend/ProductCategories'));
+        return redirect()->to(base_url('backend/productcategories'));
     }
 }
 

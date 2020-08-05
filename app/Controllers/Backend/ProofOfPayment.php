@@ -52,7 +52,7 @@ Class Proofofpayment extends Controller{
             session()->setFlashData('info',$save_error);
         }
 
-        return redirect()->to(base_url('Backend/ProofOfPayment'));
+        return redirect()->to(base_url('backend/proofofpayment'));
     }
 }
 
